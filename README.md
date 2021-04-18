@@ -1,6 +1,6 @@
-# CPSC565A1
+# CPSC565A1 - Wasps
 
-This is the implementation of wasp nest making in NetLogo for CPSC565 Assignment 1. 
+This is the implementation of wasp nest making in NetLogo for CPSC565 Assignment 1. This displays emergence through cellular automata.
 
 # Assignment Description
 
@@ -30,3 +30,39 @@ The rulesets are of the form:
 - (X1, X2, X3, X4, X5, X6, X7, X8) -> Y
 
 Where X1 represents the space to the North of the wasp, X2 to the NE, and so on clockwise, and Y represents the material to place at the wasps' location. 
+
+### Vespa Ruleset
+
+![Record3](https://user-images.githubusercontent.com/23039052/115159360-ffd5e300-a04f-11eb-8023-27fa3ff9b3fd.gif)
+
+(list (list 1 0 0 0 0 0 0 0) 2)
+(list (list 1 2 0 0 0 0 0 0) 2)
+(list (list 1 0 0 0 0 0 0 2) 2)
+(list (list 2 0 0 0 0 0 2 1) 2)
+(list (list 0 0 0 0 2 1 2 0) 2)
+(list (list 2 0 0 0 0 0 1 2) 2)
+(list (list 0 0 0 0 2 2 1 0) 2)
+(list (list 2 0 0 0 0 0 2 1) 2)
+(list (list 1 2 0 0 0 0 0 2) 2)
+(list (list 2 2 0 0 0 0 0 2) 2)
+(list (list 2 2 0 0 0 2 2 2) 2)
+(list (list 2 0 0 0 0 0 2 2) 2)
+(list (list 2 2 2 0 0 0 2 2) 2)
+(list (list 1 2 2 0 0 0 2 2) 2)
+(list (list 2 2 2 2 0 2 2 2) 2)
+(list (list 2 0 0 0 0 2 2 1) 2)
+(list (list 2 2 0 0 0 0 2 1) 2)
+(list (list 2 2 0 0 0 2 2 1) 2)
+
+### Vespula
+
+![Record4](https://user-images.githubusercontent.com/23039052/115159414-3ca1da00-a050-11eb-869e-c6f493f97098.gif)
+
+      (list (list 2 0 0 0 0 0 0 0) 2)
+      (list (list 2 2 0 0 0 0 0 0) 2)
+      (list (list 2 0 0 0 0 0 0 2) 2)
+      (list (list 2 0 0 0 0 0 2 2) 2)
+      (list (list 2 2 2 0 0 0 0 0) 2)
+      (list (list 2 2 0 0 0 0 0 2) 2)
+      (list (list 2 2 0 0 0 0 2 2) 2)
+      (list (list 2 2 2 0 0 0 2 2) 2)
