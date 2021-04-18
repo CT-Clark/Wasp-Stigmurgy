@@ -10,8 +10,6 @@ In this project we had to implement 3 predetermined rulesets as well as implemen
 
 # UI
 
-![Screenshot 2021-04-18 134436](https://user-images.githubusercontent.com/23039052/115158616-4295bc00-a04c-11eb-8bc2-cf6fcf7418da.png)
-
 To operate this project you must first enter the number of wasps to spawn, which ruleset you're using, and then the initial densities of of each material - red, green, or blue. After these settings have been initialized the setup button must be pressed, and then finally the go button can be pressed to run the simulation.
 
 ![e1](https://user-images.githubusercontent.com/23039052/115158684-a3bd8f80-a04c-11eb-8aeb-f140074a991c.png)
@@ -22,3 +20,13 @@ To operate this project you must first enter the number of wasps to spawn, which
 
 > Another example setup
 
+# Implementation
+
+## Rulesets
+
+The rulesets implement a version of cellular automata whereby local rules hopefully produce global results. The wasps move around randomly and then - if the patch underneath the wasp is devoid of any material - it examines the 8 patches surrounding the wasp. If the 8 patches correspond to a rule within the wasps' ruleset they will place a material of a particular colour at that location. 
+
+The rulesets are of the form:
+- (X1, X2, X3, X4, X5, X6, X7, X8) -> Y
+
+Where X1 represents the space to the North of the wasp, X2 to the NE, and so on clockwise, and Y represents the material to place at the wasps' location. 
